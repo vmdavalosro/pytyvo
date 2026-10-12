@@ -29,6 +29,11 @@
     .logo span { color: var(--accent); }
     nav a { margin-left: 20px; color: var(--muted); text-decoration: none; }
     nav a:hover { color: var(--text); }
+    @media (max-width: 600px) {
+      header .container { flex-direction: column; gap: 8px; }
+      nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 16px; }
+      nav a { margin-left: 0; font-size: .9rem; }
+    }
 
     .hero { padding: 90px 0 70px; text-align: center; }
     .badge {
@@ -68,6 +73,11 @@
     .msg.bot { background: #1c2733; border-left: 3px solid var(--accent); }
     .msg small { display: block; color: var(--muted); font-size: .75rem; margin-bottom: 4px; }
 
+    .tag {
+      display: inline-block; padding: 2px 10px; border-radius: 999px; margin-bottom: 10px;
+      background: #1f2d3b; color: var(--muted); font-size: .75rem; font-weight: 600;
+    }
+
     .cta { text-align: center; background: linear-gradient(135deg, #1a2533, #16202b); border-radius: 18px; padding: 50px 24px; }
     footer { padding: 30px 0; color: var(--muted); text-align: center; font-size: .9rem; border-top: 1px solid #223040; margin-top: 40px; }
   </style>
@@ -79,6 +89,7 @@
       <nav>
         <a href="#que-es">Qué es</a>
         <a href="#como">Cómo funciona</a>
+        <a href="#proximamente">Próximamente</a>
         <a href="#contacto">Contacto</a>
       </nav>
     </div>
@@ -160,6 +171,37 @@
           <div class="msg bot"><small>Pytyvõ</small>¡Hola! Vamos a solucionarlo. Primero: ¿la impresora está conectada por cable USB o por Wi-Fi?</div>
           <div class="msg user"><small>Usuario</small>Por wifi</div>
           <div class="msg bot"><small>Pytyvõ</small>Perfecto. Probablemente cambió su dirección en la red. Hagamos esto: 1) Apagá y prendé la impresora. 2) En la PC abrí “Impresoras y escáneres”…</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proximamente">
+      <div class="container">
+        <h2>Próximamente</h2>
+        <p class="sub">
+          Más servicios para pymes, con Pytyvõ como punto de entrada: el asistente te explica cómo
+          funciona cada opción, te recomienda la que mejor se adapta a tu negocio y, si querés
+          contratarla, prepara la solicitud por vos.
+        </p>
+        <div class="grid">
+          <div class="card">
+            <span class="tag">Próximamente</span>
+            <div class="icon">🛰️</div>
+            <h3>Internet satelital</h3>
+            <p>Asesoramiento, venta e instalación de equipos de internet satelital (como Starlink) para negocios en zonas rurales sin buena conexión.</p>
+          </div>
+          <div class="card">
+            <span class="tag">Próximamente</span>
+            <div class="icon">🧾</div>
+            <h3>Facturación electrónica</h3>
+            <p>Ayuda para empezar a facturar electrónicamente (SIFEN) y resolver dudas y errores del día a día.</p>
+          </div>
+          <div class="card">
+            <span class="tag">Próximamente</span>
+            <div class="icon">💼</div>
+            <h3>Sistemas de gestión</h3>
+            <p>Sistemas para ordenar ventas, stock y clientes, adaptados al tamaño de tu negocio.</p>
+          </div>
         </div>
       </div>
     </section>
