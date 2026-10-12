@@ -78,6 +78,18 @@
       background: #1f2d3b; color: var(--muted); font-size: .75rem; font-weight: 600;
     }
 
+    .founder { max-width: 680px; margin: 0 auto; display: flex; gap: 22px; align-items: flex-start; }
+    .avatar {
+      flex: none; width: 64px; height: 64px; border-radius: 50%;
+      background: var(--accent2); display: grid; place-items: center; font-weight: 800; font-size: 1.3rem;
+    }
+    .founder .role { margin-bottom: 10px; font-size: .95rem; }
+    .founder .links { margin-top: 10px; }
+    .founder .links a { color: var(--text); }
+    @media (max-width: 600px) {
+      .founder { flex-direction: column; align-items: center; text-align: center; }
+    }
+
     .cta { text-align: center; background: linear-gradient(135deg, #1a2533, #16202b); border-radius: 18px; padding: 50px 24px; }
     footer { padding: 30px 0; color: var(--muted); text-align: center; font-size: .9rem; border-top: 1px solid #223040; margin-top: 40px; }
   </style>
@@ -201,6 +213,27 @@
             <div class="icon">💼</div>
             <h3>Sistemas de gestión</h3>
             <p>Sistemas para ordenar ventas, stock y clientes, adaptados al tamaño de tu negocio.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="equipo">
+      <div class="container">
+        <h2>Quién está detrás</h2>
+        <div class="card founder">
+          <div class="avatar">VD</div>
+          <div>
+            <h3>Victor Manuel Dávalos Romero</h3>
+            <p class="role">Fundador · Asunción, Paraguay</p>
+            <p>
+              Fundé Pytyvõ para que cualquier pyme paraguaya, aunque no tenga un área de sistemas,
+              pueda resolver sus problemas técnicos en su idioma y sin esperar.
+            </p>
+            <p class="links">
+              <a href="mailto:victor@pytyvo.tech">victor@pytyvo.tech</a> ·
+              <a href="https://github.com/vmdavalosro" target="_blank" rel="noopener">GitHub</a>
+            </p>
           </div>
         </div>
       </div>
